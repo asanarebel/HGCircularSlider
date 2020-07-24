@@ -33,6 +33,7 @@ extension CircularSlider {
         context.addArc(center: origin, radius: circle.radius, startAngle: arc.startAngle, endAngle: arc.endAngle, clockwise: false)
         context.move(to: CGPoint(x: origin.x, y: origin.y))
         context.drawPath(using: mode)
+        context.setShadow(offset: CGSize.zero, blur: 8.0, color: UIColor.black.cgColor.copy(alpha: 0.15))
         
         UIGraphicsPopContext()
     }
