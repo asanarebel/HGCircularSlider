@@ -173,12 +173,12 @@ open class CircularSlider: UIControl {
     }
 
     /**
-    * The offset of the thumb centre from the circle.
-    *
-    * You can use this to move the thumb inside or outside the circle of the slider
-    * If the value is grather than 0 the thumb will be displayed outside the cirlce
-    * And if the value is negative, the thumb will be displayed inside the circle 
-    */
+     * The offset of the thumb centre from the circle.
+     *
+     * You can use this to move the thumb inside or outside the circle of the slider
+     * If the value is grather than 0 the thumb will be displayed outside the cirlce
+     * And if the value is negative, the thumb will be displayed inside the circle
+     */
     @IBInspectable
     open var thumbOffset: CGFloat = 0.0 {
         didSet {
@@ -187,9 +187,9 @@ open class CircularSlider: UIControl {
     }
 
     /**
-    * Stop the thumb going beyond the min/max.
-    *
-    */
+     * Stop the thumb going beyond the min/max.
+     *
+     */
     @IBInspectable
     open var stopThumbAtMinMax: Bool = false
 
@@ -343,4 +343,9 @@ open class CircularSlider: UIControl {
 
         return newValue
     }
+    
+    open override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return !(gestureRecognizer is UIPanGestureRecognizer)
+    }
+
 }
