@@ -27,19 +27,22 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 - iOS 9.0+
-- Xcode 11.4
+- Xcode 10.0
 
 ## Installation
 
-HGCircularSlider is also available through [Swift Package Manager](https://swift.org/package-manager/)
-
-Follow this [doc](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app?language=swift).
-
-HGCircularSlider is also available through [CocoaPods](http://cocoapods.org). To install
+HGCircularSlider is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ``` ruby
-pod 'HGCircularSlider', '~> 2.2.1'
+# Swift 3.1 - Xcode 8.3
+pod 'HGCircularSlider', '~> 2.0.0'
+
+# Swift 3 - Xcode 8
+pod 'HGCircularSlider', '~> 1.0.3'
+
+# Swift 2.2 - Xcode 7.3.1 (Checkout Swift2_Xcode7.3 branche)
+pod 'HGCircularSlider', '~> 0.1.2'
 ```
 
 HGCircularSlider is also available through [Carthage](https://github.com/Carthage/Carthage). To install
@@ -47,6 +50,7 @@ it, simply add the following line to your Cartfile:
 
 
 ``` ruby
+# Swift 3.1 - Xcode 8
 github "HamzaGhazouani/HGCircularSlider"
 ```
 
